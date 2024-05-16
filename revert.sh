@@ -16,4 +16,3 @@ rm fluidd-1.28.tgz
 sudo service klipper restart ; sudo service moonraker restart
 echo "working versions of klipper and moonraker have been installed from qidi's github repository, and fluidd has been updated to the latest version that works with qidi's modified software"
 echo "turn your printer off and on and you should be good to go"
-
