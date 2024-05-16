@@ -1,12 +1,8 @@
 #!/bin/bash
 echo
 "###############################################################################
-please enter the password 'makerbase' when prompted for a password (unless you've changed it, then pbviously use that password)
+please enter the password 'makerbase' when prompted for a password (unless you've changed it, then obviously use that password)
 ###############################################################################"
-echo "find your time zone here: https://en.m.wikipedia.org/wiki/List_of_tz_database_time_zones. it should be in the format America/Chicago"
-read -p "what is your timezone? " timzn
-sudo timedatectl set-timezone "$timzn"
-sudo timedatectl set-ntp 1
 cd /home/mks
 sudo rm -rf fluidd klipper moonraker
 echo "cloning qidi's klipper repo..."
