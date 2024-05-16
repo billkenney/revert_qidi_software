@@ -1,0 +1,24 @@
+#!/bin/bash
+echo
+"###############################################################################
+please enter the password 'makerbase' when prompted for a password (unless you've changed it, then pbviously use that password)
+###############################################################################"
+echo "find your time zone here: https://en.m.wikipedia.org/wiki/List_of_tz_database_time_zones. it should be in the format America/Chicago"
+read -p "what is your timezone? " timzn
+sudo timedatectl set-timezone "$timzn"
+sudo timedatectl set-ntp 1
+cd /home/mks
+sudo rm -rf fluidd klipper moonraker
+echo "cloning qidi's klipper repo..."
+git clone https://github.com/QIDITECH/klipper.git
+echo "cloning qidi's moonraker repo..."
+git clone https://github.com/QIDITECH/moonraker.git
+echo "downloading fluidd 1.28..."
+wget 'https://docs.google.com/uc?export=download&id=1Essar3y789UNelY1G5T_Dro7V41O4m4K' -O fluidd-1.28.tgz
+tar -xzf fluidd-1.28.tgz
+rm fluidd-1.28.tgz
+sudo service klipper restart ; sudo service moonraker restart
+echo "working bersions of klipper and moonraker have been installed from qidi's github repository, and fluidd has been updated to the latest version that works with qidi's modified software"
+echo "turn your printer off and on and you should be good to go"
+echo "if klipper is not working properly, ssh into your printer and run 'chmod +x /home/mks/klipper/scripts/install-debian.sh ; /home/mks/klipper/scripts/install-debian.sh'"
+echo "if moonraker is not working properly, ssh into your printer and run 'chmod +x /home/mks/moonraker/scripts/install-moonraker.sh ; /home/mks/moonraker/scripts/install-moonraker.sh'"
