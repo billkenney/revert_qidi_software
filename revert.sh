@@ -14,7 +14,7 @@ wget 'https://docs.google.com/uc?export=download&id=1Essar3y789UNelY1G5T_Dro7V41
 tar -xzf fluidd-1.28.tgz
 rm fluidd-1.28.tgz
 sudo service klipper restart ; sudo service moonraker restart
-echo "working bersions of klipper and moonraker have been installed from qidi's github repository, and fluidd has been updated to the latest version that works with qidi's modified software"
+echo "working versions of klipper and moonraker have been installed from qidi's github repository, and fluidd has been updated to the latest version that works with qidi's modified software"
 echo "turn your printer off and on and you should be good to go"
 echo "if klipper is not working properly, ssh into your printer and run 'chmod +x /home/mks/klipper/scripts/install-debian.sh ; /home/mks/klipper/scripts/install-debian.sh'"
 echo "if moonraker is not working properly, ssh into your printer and run 'chmod +x /home/mks/moonraker/scripts/install-moonraker.sh ; /home/mks/moonraker/scripts/install-moonraker.sh'"
