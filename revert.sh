@@ -4,7 +4,7 @@ echo
 please enter the password 'makerbase' if prompted for a password (unless you've changed it, then obviously use that password)
 ###############################################################################"
 cd /home/mks
-sudo rm -rf fluidd klipper moonraker
+sudo rm -rf fluidd klipper klippy-env moonraker moonraker-env
 echo "cloning qidi's klipper repo..."
 git clone https://github.com/QIDITECH/klipper.git
 echo "cloning qidi's moonraker repo..."
