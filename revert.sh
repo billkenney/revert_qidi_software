@@ -16,7 +16,7 @@ rm fluidd-1.28.tgz
 echo "reinstalling klipper..."
 chmod +x ~/klipper/scripts/install-debian.sh
 sh ~/klipper/scripts/install-debian.sh
-echo "reinsralling moonraker..."
+echo "reinstalling moonraker..."
 chmod +x ~/moonraker/scripts/install-moonraker.sh
 sh ~/moonraker/scripts/install-moonraker.sh
 sudo service klipper restart ; sudo service moonraker restart
