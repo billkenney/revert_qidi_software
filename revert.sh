@@ -3,6 +3,7 @@ echo
 "###############################################################################
 please enter the password 'makerbase' if prompted for a password (unless you've changed it, then obviously use that password)
 ###############################################################################"
+sudo sed -i ‘s/deb.debian.org\/debian buster-backports/archive.debian.org\/debian buster-backports/g’ /etc/apt/sources.list
 cd /home/mks
 sudo rm -rf fluidd klipper klippy-env moonraker moonraker-env
 echo "cloning qidi's klipper repo..."
