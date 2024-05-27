@@ -13,7 +13,7 @@ if you get an ssl error when trying to download the script, find your time zone 
 
 3. after rebooting your printer, run `sudo service klipper status` and make sure it does not say 'failed', 'exited', service not found, or any other error code. also run `sudo service moonraker status` and make sure it does not say 'failed', 'exited', service not found, or any other error code
 
-# if klipper or moonraker do not work after running the script
+# if klipper or moonraker is not working after running the script
 
 4. if klipper is not working properly after running the script, run `chmod +x /home/mks/klipper/scripts/install-debian.sh ; /home/mks/klipper/scripts/install-debian.sh`. after the install is finished, check to make sure the service is working properly `sudo service klipper status`
 
