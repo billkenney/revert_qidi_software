@@ -19,7 +19,7 @@ if you get an ssl error when trying to download the script, find your time zone 
 
 5. if moonraker is not working properly, run `chmod +x /home/mks/moonraker/scripts/install-moonraker.sh ; /home/mks/moonraker/scripts/install-moonraker.sh`. after the install is finished, check to make sure the service is working properly `sudo service moonraker status`
 
-# if the printer or screen are not working properly after steps 1-5, reinstall the firmware, or write a recovery image to the emmc
+# if the printer or screen are still not working, reinstall the firmware, or write a recovery image to the emmc
 
 6. follow the steps here to reinstall the firmware: https://github.com/billkenney/qidi_3series_recovery/blob/main/README.md
 
