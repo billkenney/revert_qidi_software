@@ -13,18 +13,14 @@ if you get an ssl error when trying to download the script, find your time zone 
 
 3. after rebooting your printer, run `sudo service klipper status` and make sure it does not say 'failed', 'exited', service not found, or any other error code. also run `sudo service moonraker status` and make sure it does not say 'failed', 'exited', service not found, or any other error code
 
-# if klipper does not work after running the script
+# if klipper or moonraker do not work after running the script
 
 4. if klipper is not working properly after running the script, run `chmod +x /home/mks/klipper/scripts/install-debian.sh ; /home/mks/klipper/scripts/install-debian.sh`. after the install is finished, check to make sure the service is working properly `sudo service klipper status`
 
-# if moonraker does not work after running the script
-
 5. if moonraker is not working properly, run `chmod +x /home/mks/moonraker/scripts/install-moonraker.sh ; /home/mks/moonraker/scripts/install-moonraker.sh`. after the install is finished, check to make sure the service is working properly `sudo service moonraker status`
 
-# if the printer does not work after steps 1-5, the screen says "the system starts abnormally!", etc., reinstall the firmware
+# if the printer or screen are not working properly after steps 1-5, reinstall the firmware, or write a recovery image to the emmc
 
-6. follow the steps here: https://github.com/billkenney/qidi_3series_recovery/blob/main/README.md
+6. follow the steps here to reinstall the firmware: https://github.com/billkenney/qidi_3series_recovery/blob/main/README.md
 
-# if the printer still does not work after reinstalling the firmware
-
-7. you may need a new emmc, contact qidi support about this. if you already have an emmc adapter, follow these instructions to write the recovery image to your emmc: https://wiki.qidi3d.com/en/Memo/flash-emmc. update the firmware after booting with the newly flashed image: https://github.com/billkenney/qidi_3series_recovery/blob/main/README.md
+7. if it still doesn't work, you may need a new emmc, contact qidi support about this. if you already have an emmc adapter, follow these instructions to write the recovery image to your emmc: https://wiki.qidi3d.com/en/Memo/flash-emmc. update the firmware after booting with the newly flashed image (step 6)
