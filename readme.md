@@ -3,7 +3,7 @@ this script is for the max3/plus3/smart3. it will revert your klipper and moonra
 
 using a terminal client such as putty for windows, Terminal on macos or linux, or an app like shelly or terminus on your phone, ssh into your printer: `ssh mks@printer.ip.address` replacing 'printer.ip.address' with your printers ip address. the username is 'mks' and the password is 'makerbase' any time you are prompted for a password (unless you changed it)
 
-in order to reinstall klipper/moonraker, you need to make sure your date and time is correct. ssh into your printer and run `date`. if the date is incorrect, find your time zone here: https://en.m.wikipedia.org/wiki/List_of_tz_database_time_zones (it should be in the format America/Chicago), then run `sudo timedatectl set-timezone [your_timezone] ; sudo timedatectl set-ntp 1` replacing [your_timezone] with your actual timezone. run `date` again and make sure its correct. if its not, follow the steps here to fix it before proceeding: https://wiki.qidi3d.com/en/Memo/System-Time-Modification
+if you get an ssl certificate error downloading the script, or if you have to reinstall klipper/moonraker (steps 4-5), you need to make sure your date and time is correct. ssh into your printer and run `date`. if the date is incorrect, find your time zone here: https://en.m.wikipedia.org/wiki/List_of_tz_database_time_zones (it should be in the format America/Chicago), then run `sudo timedatectl set-timezone [your_timezone] ; sudo timedatectl set-ntp 1` replacing [your_timezone] with your actual timezone. run `date` again and make sure its correct. if its not, follow the steps here to fix it before proceeding: https://wiki.qidi3d.com/en/Memo/System-Time-Modification
 
 # download and run the recovery script
 
@@ -11,7 +11,7 @@ in order to reinstall klipper/moonraker, you need to make sure your date and tim
 
 2. the script shouldn't take long, maybe around a minute depending on your internet connection. once its done, turn your printer off and on and you should be good to go
 
-3. after rebooting your printer, run `sudo service klipper status` and make sure it does not say 'failed', 'exited', service not found, or any other error code. also run `sudo service moonraker status` and make sure it does not say 'failed', 'exited', service not found, or any other error code
+3. after rebooting your printer, if its not working, run `sudo service klipper status` and make sure it does not say 'failed', 'exited', service not found, or any other error code. also run `sudo service moonraker status` and make sure it does not say 'failed', 'exited', service not found, or any other error code
 
 # if klipper or moonraker is not working after running the script
 
