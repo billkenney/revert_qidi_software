@@ -5,6 +5,8 @@ using a terminal client such as putty for windows, Terminal on macos or linux, o
 
 if you get an ssl certificate error downloading the script, or if you have to reinstall klipper/moonraker (steps 4-5), you need to make sure your date and time is correct. ssh into your printer and run `date`. if the date is incorrect, find your time zone here: https://en.m.wikipedia.org/wiki/List_of_tz_database_time_zones (it should be in the format America/Chicago), then run `sudo timedatectl set-timezone [your_timezone] ; sudo timedatectl set-ntp 1` replacing [your_timezone] with your actual timezone. run `date` again and make sure its correct. if its not, follow the steps here to fix it before proceeding: https://wiki.qidi3d.com/en/Memo/System-Time-Modification
 
+after runnint this script, if you encounter a white screen when navigating to http://printer.ip.address:10088, or a screen that just shows your webcam, fluidd may not have installed properly. ssh into your printer and run the following command: `cd /home/mks ; rm -rf fluidd ; wget --no-check-certificate https://raw.githubusercontent.com/billkenney/revert_qidi_software/main/fluidd-1.28.tgz ; tar -xzf fluidd-1.28.tgz ; rm fluidd-1.28.tgz`
+
 # download and run the recovery script
 
 1. run `cd ~ ; wget --no-check-certificate https://raw.githubusercontent.com/billkenney/revert_qidi_software/main/revert.sh ; chmod +x revert.sh ; ./revert.sh`
