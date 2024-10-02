@@ -4,7 +4,7 @@ echo
 please enter the password 'makerbase' if prompted for a password (unless you've changed it, then obviously use that password)
 ###############################################################################"
 sudo sed -i ‘s/deb.debian.org\/debian buster-backports/archive.debian.org\/debian buster-backports/g’ /etc/apt/sources.list
-sudo mv ~/klipper_config/MKS_THR.cfg ~/klipper_config/MKS_THR.cfg.bak ; path=$(ls /dev/serial/by-id/*) ; printf "[mcu MKS_THR]\nserial:$path\n" > ~/klipper_config/MKS_THR.cfg
+sudo mv ~/klipper_config/MKS_THR.cfg ~/klipper_config/MKS_THR.cfg.bak ; ls /dev/serial/by-id/* > /tmp/path ; sed -Ei 's/^/\[mcu MKS_THR\]\nserial:/;s/([0-9][0-9])$/\1\n/' /tmp/path ; sudo mv /tmp/path ~/klipper_config/MKS_THR.cfg
 sudo service klipper stop ; sudo service moonraker stop
 cd /home/mks
 sudo rm -rf fluidd klipper moonraker
