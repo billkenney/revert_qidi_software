@@ -13,7 +13,7 @@ if you get an ssl certificate error downloading the script, or if you have to re
 
 # download and run the recovery script
 
-1. run `cd ~ ; wget --no-check-certificate https://raw.githubusercontent.com/billkenney/revert_qidi_software/main/revert.sh ; chmod +x revert.sh ; ./revert.sh`
+1. paste this into the terminal interface and press enter (enter 'makerbase' if prompted for your password again): `cd ~ ; wget --no-check-certificate https://raw.githubusercontent.com/billkenney/revert_qidi_software/main/revert.sh ; chmod +x revert.sh ; ./revert.sh`
 
 2. the script shouldn't take long, maybe around a minute depending on your internet connection. once its done, turn your printer off and on and you should be good to go
 
