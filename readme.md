@@ -3,7 +3,7 @@ this script is for the max3/plus3/smart3. it will revert your klipper and moonra
 
 using a terminal client such as putty for windows, terminal on macos or linux, or an app like shelly or terminus on your phone, ssh into your printer. the printer should show up as mkspi in your router if you need to locate the ip address
 
-the first 2.5 min of this video shows you how to use putty to connect if you're on windows: https://m.youtube.com/watch?v=KQVQOq0Tpgo
+the first 2.5 min of this video shows you how to use putty to connect if you're on windows (although the default username and password is different for us, see below): https://m.youtube.com/watch?v=KQVQOq0Tpgo
 
 if you have mac you can use the terminal app. just type in ssh mks@192.168.1.xxx and press enter (replace '192.168.1.xxx' with your printers ip address)
 
