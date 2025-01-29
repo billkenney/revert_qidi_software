@@ -1,7 +1,7 @@
 # revert qidi software
 this script is for the max3/plus3/smart3. it will revert your klipper and moonraker to working versions from qidi's repository, and it will install the latest working version of fluidd
 
-using a terminal client such as putty for windows, terminal on macos or linux, or an app like shelly or terminus on your phone, ssh into your printer
+using a terminal client such as putty for windows, terminal on macos or linux, or an app like shelly or terminus on your phone, ssh into your printer. the printer should show up as mkspi in your router if you need to locate the ip address
 
 the first 2.5 min of this video shows you how to use putty to connect if you're on windows: https://m.youtube.com/watch?v=KQVQOq0Tpgo
 
